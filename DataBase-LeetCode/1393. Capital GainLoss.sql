@@ -1,4 +1,6 @@
-SELECT stock_name,(SUM(CASE WHEN operation = 'Buy' 
-THEN -price ELSE price END)) AS capital_gain_loss
-FROM Stocks 
-GROUP BY stock_name
+public void reverse(){
+for(int i=0;i<size;i++){
+  T temp=arr[i];
+  arr[i]=arr[size-1-i];
+  arr[size-1-i]=temp;
+}
